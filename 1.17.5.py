@@ -10,7 +10,7 @@ def gcd(m,n):
 class Fraction:
     def __init__(self,top,bottom):
         self.num = int(top / gcd(top, bottom))
-        self.den = int(bottom / gcd(top, bottom))
+        self.den = int(bottom / gcd(top, bottom))        
 
     def __str__(self):
         return str(self.num)+"/"+str(self.den)
@@ -86,7 +86,7 @@ class Fraction:
     def getDen(self):
         return self.den
         
-x = Fraction(a,3)
+x = Fraction(3,3)
 y = Fraction(2,3)
 
 print(x.getDen())
